@@ -36,7 +36,38 @@
         </nav>
     </header>
     <!-- Main is the element that represents the dominant content of the body of a document -->
-    <main>Signup</main>
+    <main>
+        <section id="signup">
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+            <h2> <i class="fa-solid fa-heart-pulse"></i> LET'S GET YOU SIGNED UP!</h2>
+            <Label for="first-name">First Name</Label>
+            <input type="text" class="text-input" required>
+            <br>
+            <label for="last-name">Last Name</label>
+            <input type="text" class="text-input" required>
+            <br>
+            <label for="email-address">Email Address</label>
+            <input type="email" name="email-address" id="email-address" class="text-input" required>
+            <br>
+            <div class="radio-buttons">
+                <div>
+                    <label for="road">Road</label>
+                    <input type="radio" name="running_preference" id="road" value="road" required>
+                </div>
+                <div>
+                    <label for="trail">Trail</label>
+                    <input type="radio" name="running_preference" id="trail" value="trail" required>
+                </div>                
+                <div>
+                    <label for="both">Both</label>
+                    <input type="radio" name="running_preference" id="both" value="both" required>
+                </div>         
+            </div>
+            <button type="submit" class="join-button">Let's Run!</button>
+
+            </form>
+        </section>
+    </main>
 
     <!-- Footer  is a structural element used to identify the footer of a page, document, article, or section -->
     <footer>
