@@ -18,6 +18,13 @@ body {
     /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
+
+h1,h2,h3 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #252525;
+    }
 }
 
 /* HEADER */
@@ -37,13 +44,6 @@ header a {
     text-decoration: none;
     color: inherit;
 
-}
-
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
 }
 
 #menu {
@@ -86,17 +86,33 @@ nav {
 
 /* MAIN CONTENT*/
 main {
-   
+
     margin-top: 47px;
     /* Make main element take up any surplus space to push the footer down */
     flex: 1 0 auto;
 }
+
 /* Hero Section */
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/hero.webp") no-repeat center center/cover
+    background: url("../images/hero.webp") no-repeat center center/cover;
+    position: relative;
 }
+#cover-text {
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
+}
+
 
 /* FOOTER */
 #social-networks {
@@ -106,7 +122,8 @@ main {
     justify-content: space-evenly;
     list-style-type: none;
 }
-#social-networks i{
+
+#social-networks i {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
@@ -145,6 +162,11 @@ main {
     /* push the main content down to accomodate larger header */
     main {
         margin-top: 79px;
+    }
+    /* HERO */
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 }
 
